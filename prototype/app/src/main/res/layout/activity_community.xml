@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Top_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/logo_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/alarmbt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="로그인"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:id="@+id/mypage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="마이페이지"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:id="@+id/login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="회원가입"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/jalnan"
+                    android:text="커뮤니티"
+                    android:textColor="#ffffff"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Middle_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Top_Linear"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="300dp"
+                    android:background="#696969"
+                    android:text="글쓰기"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Middle_Linear"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="410dp"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#BFBABA" />
+
+                <RelativeLayout
+                    android:id="@+id/cum1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxEms="15"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:text="안녕하세요"
+                        android:textColor="#302C2C"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/talk1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="350dp"
+                        app:srcCompat="@drawable/talk"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="380dp"
+                        android:text="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="ㅂㅂㅂ"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:text="조회수 7"/>
+
+                    <ImageView
+                        android:id="@+id/heart1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/heart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="20dp"
+                        android:text="2"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="410dp"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#BFBABA" />
+
+                <RelativeLayout
+                    android:id="@+id/cum2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxEms="15"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:text="안녕하세요"
+                        android:textColor="#302C2C"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/talk2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="350dp"
+                        app:srcCompat="@drawable/talk"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="380dp"
+                        android:text="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="ㅂㅂㅂ"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:text="조회수 7"/>
+
+                    <ImageView
+                        android:id="@+id/heart2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/heart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="20dp"
+                        android:text="2"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="410dp"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#BFBABA" />
+
+                <RelativeLayout
+                    android:id="@+id/cum3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxEms="15"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:text="안녕하세요"
+                        android:textColor="#302C2C"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/talk3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="350dp"
+                        app:srcCompat="@drawable/talk"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="380dp"
+                        android:text="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="ㅂㅂㅂ"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:text="조회수 7"/>
+
+                    <ImageView
+                        android:id="@+id/heart3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/heart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="20dp"
+                        android:text="2"/>
+
+                </RelativeLayout>
+
+                <View
+                android:layout_width="410dp"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="#BFBABA" />
+
+                <RelativeLayout
+                    android:id="@+id/cum4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxEms="15"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:text="안녕하세요"
+                        android:textColor="#302C2C"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/talk4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="350dp"
+                        app:srcCompat="@drawable/talk"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="380dp"
+                        android:text="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="ㅂㅂㅂ"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:text="조회수 7"/>
+
+                    <ImageView
+                        android:id="@+id/heart4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/heart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="20dp"
+                        android:text="2"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="410dp"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#BFBABA" />
+
+                <Button
+                    android:id="@+id/write2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="300dp"
+                    android:background="#696969"
+                    android:text="글쓰기"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_below="@+id/last_line"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIPPO"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대표 연락처 : 010-7221-1785"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이메일 : phs811@naver.com"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Copyright © 2021 HIPPO. All rights reserved"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
