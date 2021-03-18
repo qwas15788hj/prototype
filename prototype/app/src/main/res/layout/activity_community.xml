@@ -86,25 +86,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/Middle_Linear"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/Top_Linear"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/write"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="300dp"
-                    android:background="#696969"
-                    android:text="글쓰기"
-                    android:textColor="#ffffff"
-                    android:textSize="15dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
                 android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -391,7 +372,7 @@
                     android:background="#BFBABA" />
 
                 <Button
-                    android:id="@+id/write2"
+                    android:id="@+id/write"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="300dp"
